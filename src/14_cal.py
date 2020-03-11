@@ -35,7 +35,7 @@ dt = datetime.now()
 print(f"Current year: {dt.year}")
 print(f"Current month: {dt.month}")
 
-def render_cal(year = dt.year, month = dt.month):
+def render_cal(month = dt.month, year = dt.year):
     return print(calendar.monthcalendar(year, month))
     
 if len(sys.argv) < 2:
