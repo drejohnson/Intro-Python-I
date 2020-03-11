@@ -32,11 +32,10 @@ import calendar
 from datetime import datetime
 
 dt = datetime.now()
-print(f"Current year: {dt.year}")
-print(f"Current month: {dt.month}")
+tc = calendar.TextCalendar()
 
 def render_cal(month = dt.month, year = dt.year):
-    return print(calendar.monthcalendar(year, month))
+    return print(tc.prmonth(year, month))
     
 if len(sys.argv) < 2:
     render_cal()
